@@ -1,0 +1,28 @@
+Program 
+Float temp;
+void setup()
+{ 
+ PinMode(A5,INPUT);
+ Serial.begin(9600);
+}
+vloop()
+{
+temp=analogRead(A5);
+temp=temp*0.48828125;
+Serial.print(“Temperature”);
+Serial.print(temp);
+ Serial.print(“+C”);
+ Serial.println();
+ delay (1000);
+}
+Void setup()
+{
+ PinMode (13, OUTPUT);
+}
+Void loop ()
+{
+tone(13,200,100);
+delay (200);
+ tone(13,500,300);
+delay (500);
+}
